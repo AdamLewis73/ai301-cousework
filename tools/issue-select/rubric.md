@@ -27,7 +27,7 @@ A filled rubric must contain:
 Cover what actually kills first contributions. The lecture named four
 families: the maintainer is alive, the repo is in use, the scope fits a
 newcomer, and nobody else is already on it. A rubric that ignores a family
-will fail eval issues designed around that family.
+will fail eval issues designed around that family.-->
 
 ## Checks
 
@@ -40,15 +40,6 @@ will fail eval issues designed around that family.
 |bounded\\\_issue|the scope of the issue and whether it is a straight-forward task that has a definitive goal of success based on the description and issue comments|the issue is properly bounded|preferred|
 
 ## Verdict rule
-
-<!-- State how the grades above combine into accept or reject, and how
-
-unclear is treated. Example shape (write your own): "accept if every
-
-required check passes; preferred checks never change the verdict, they
-
-
-
 
 Accept if every required passes. Preferred don't change verdict but rank accepted issues based on the boundedness of the issue. Unclear is fail depending on the activity of the linked issue; if the issue has a linked PR but was never merged and hasn't been actively worked on in the last 30 days, then this counts as a pass as long as the required checks pass.
 
