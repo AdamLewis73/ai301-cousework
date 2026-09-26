@@ -33,13 +33,14 @@ will fail eval issues designed around that family.-->
 
 |Check|Evidence|Pass condition|Weight|
 |-|-|-|-|
-|maintainer\\\_active|the maintainer's activity and whether they have been active in the comments or has merged anything in the last six months|if the maintainer has been active in the last 6 months|required|
-|ai\\\_policy|the ai usage policy of the repo| the repo explicity states in its docs that it allows ai to be used or they have no policy banning AI use|required|
-|unclaimed\_issue|whether someone is already assigned|no one assigned|required|
-|issue\\\_in\\\_use|the existence of PRs linked to the issue|no PRs are linked to the issue|unclear|
-|bounded\\\_issue|the scope of the issue and whether it is a straight-forward task that has a definitive goal of success based on the description and issue comments|the issue is properly bounded|preferred|
+|maintainer\\\\\\\_active|the maintainer's activity and whether they have been active in the comments or has merged anything in the last six months|if the maintainer has been active in the last 6 months|required|
+|ai\\\\\\\_policy|the ai usage policy of the repo| the repo explicity states in its docs that it allows ai to be used or they have no policy banning AI use|required|
+|unclaimed\\\_issue|whether someone is already assigned|no one assigned|required|
+|issue\\\\\\\_in\\\\\\\_use|the existence of PRs linked to the issue|no PRs are linked to the issue|unclear|
+|bounded\\\\\\\_issue|the scope of the issue and whether it is a straight-forward task that has a definitive goal of success based on the description and issue comments|the issue is properly bounded|preferred|
 
 ## Verdict rule
 
 Accept if every required passes. Preferred don't change verdict but rank accepted issues based on the boundedness of the issue. Unclear is fail depending on the activity of the linked issue; if the issue has a linked PR but was never merged and hasn't been actively worked on in the last 30 days, then this counts as a pass as long as the required checks pass.
+
 
